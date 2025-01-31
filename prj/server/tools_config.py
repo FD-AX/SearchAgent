@@ -1,7 +1,6 @@
 import functools
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-from prj.tools.answer_check import answer_check
+from ..tools.answer_check import answer_check
 
 
 answer_check = {

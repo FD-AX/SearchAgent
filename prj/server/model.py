@@ -1,8 +1,6 @@
 from mistralai import Mistral
-from langchain.agents import initialize_agent, Tool, AgentType
-from langchain.agents import AgentExecutor
-from langchain.prompts import PromptTemplate
-from tools_config import tools
+
+from ..server.tools_config import tools
 
 def create_mistral_agent(api_key = "qIzgJeXyROO9gZ6AIHWsgQKCYh5jgOCd"):
     return Mistral(api_key=api_key)
